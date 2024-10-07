@@ -18,7 +18,6 @@ var expect = function(value1) {
       throw new Error('Equal');
     }
   }
-
   return { toBe, notToBe };
 
 };
