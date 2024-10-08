@@ -4,5 +4,9 @@
  * @return {number[]}
  */
 var map = function(arr, fn) {
-    return arr.map(fn)
+  const newArray=new Array(arr.length)
+  for(const i in arr){
+    newArray[i]=(fn(arr[i],Number(i)))
+  }
+  return newArray;
 };
